@@ -1,6 +1,6 @@
 <template>
-  test uchun
-  <img src="./assets/imgs/akani suratlari.png" alt="">
+  test uchunsasasas
+  <img src="./assets/imgs/blur bg.png" alt="">
 </template>
 
 <script setup>
