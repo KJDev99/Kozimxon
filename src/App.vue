@@ -1,6 +1,7 @@
 <template>
-  test uchunsasasas
-  <img src="./assets/imgs/blur bg.png" alt="">
+  <div class="md:container md:mx-auto">
+    test uchunsasasas
+  </div>
 </template>
 
 <script setup>
