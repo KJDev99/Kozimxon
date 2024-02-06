@@ -1,11 +1,12 @@
 <template>
- <div class="w-[100%] bg-gray-500 px-5 h-[10vh]">
-    <div class="container mx-auto bg-slate-50">sas  </div>
+ <div class="w-[100%] ">
+    <mainVue/>
+    sa
  </div>
 </template>
 
 <script setup>
-
+import mainVue from './components/main.vue';
 </script>
 
 <style></style>
