@@ -1,11 +1,11 @@
 <template>
   <headerVue />
-  <main />
+  <mainVue />
 </template>
 
 <script setup>
 import headerVue from './components/header.vue';
-import main from './components/main.vue';
+import mainVue from './components/main.vue'
 </script>
 
 <style></style>
