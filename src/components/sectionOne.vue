@@ -22,7 +22,7 @@
       </div>
 
       <div
-        class="relative h-[175px] flex items-center  pl-[100px] pr-[10px] text-white text-lg font-normal"
+        class="relative h-[175px]  flex items-center  pl-[100px] pr-[10px] text-white text-lg font-normal"
       >
         <img
           src="../assets/imgs/main-card2.png"
@@ -47,6 +47,9 @@
         </p>
       </div>
     </div>
+    <div class="mt-[40px] max-md:mt-[30px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer">
+      <p class="text-lg font-medium text-white ">Жойни банд қилиш </p>
+    </div>
   </div>
 </template>
 
@@ -63,5 +66,8 @@
   border-radius: 22px;
   backdrop-filter: blur(17px);
   background: rgba(21, 210, 232, 0.05);
+}
+img{
+  object-fit: contains;
 }
 </style>

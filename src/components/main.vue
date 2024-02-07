@@ -21,5 +21,6 @@ import sectionFour from './sectionFour.vue';
     background: url('../assets/imgs/blur bg.png') center/cover no-repeat;
     width: 100%;
     height: 6887px;
+    overflow-x: hidden;
 }
-</style>
+</style>    
