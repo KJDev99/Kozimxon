@@ -30,10 +30,10 @@
         </p>
       </div>
     </div>
-    <div
-      class="mt-[40px] max-md:mt-[30px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer">
-      <p class="text-lg font-medium text-white ">Жойни банд қилиш </p>
-    </div>
+    <button
+      class="mt-[40px] max-xl:mt-[0px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer text-lg font-medium text-white">
+      Жойни банд қилиш
+    </button>
   </div>
 </template>
 

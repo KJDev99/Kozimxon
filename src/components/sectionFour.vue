@@ -170,15 +170,15 @@ export default {
         font-size: 18px;
         display: flex;
         justify-content: center;
-        width: 340px;
-        height: 300px;
+        width: 100%;
+        height: 245px;
         border-radius: 22px;
     }
 
     .swiper-slide iframe {
         border-radius: 22px;
         border: 1px solid rgba(21, 210, 232, 0.5);
-        width: 340px;
+        width: 100%;
         height: 191px;
     }
 
