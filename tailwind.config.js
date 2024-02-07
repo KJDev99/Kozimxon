@@ -11,5 +11,10 @@ module.exports = {
         xl: '5rem',      // Padding for extra large screens
       },
     },
+    colors: { 
+      "btn-blue":'#10A6B9',
+      'white': '#ffffff',
+      "bgcolor-blue":'#15D2E8'
+    }
   },
 };

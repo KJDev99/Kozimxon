@@ -22,12 +22,12 @@
       </div>
 
       <div
-        class="relative h-[175px] flex items-center  pl-[100px] pr-[10px] text-white text-lg font-normal"
+        class="relative h-[175px]  flex items-center  pl-[100px] pr-[10px] text-white text-lg font-normal"
       >
         <img
           src="../assets/imgs/main-card2.png"
           alt="icon"
-          class="absolute md:left-[-14px] md:top-[-82px] w-[137px]h-[137px] max-md:w-[109px] max-md:top-[-36px] max-md:left-0"
+          class="absolute md:left-[-14px] md:top-[-82px] w-[137px] h-[137px] max-md:w-[109px] max-md:top-[-36px] max-md:left-0"
         />
         <p>
           Компаниянгизда HR тизимини жорий этган ҳолда 101% ли натижага эришиш;
@@ -47,6 +47,9 @@
         </p>
       </div>
     </div>
+    <div class="mt-[40px] max-md:mt-[30px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer">
+      <p class="text-lg font-medium text-white ">Жойни банд қилиш </p>
+    </div>
   </div>
 </template>
 
@@ -63,5 +66,8 @@
   border-radius: 22px;
   backdrop-filter: blur(17px);
   background: rgba(21, 210, 232, 0.05);
+}
+img{
+  object-fit: contains;
 }
 </style>
