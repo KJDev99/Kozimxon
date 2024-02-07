@@ -1,11 +1,16 @@
 <template>
-  <div class="w-[100%] h-[720px] max-md:h-[389px] relative sectionTwo mt-[100px] ">
-    <!-- flex items-center justify-center  pl-[450px] max-lg:pl-0 -->
+  <div class="w-[100%] h-[720px] max-md:h-[389px] relative sectionTwo mt-[100px]  ">
+    <!-- flex items-center justify-center  pl-[450px] max-lg:pl-0  max-md:rounded-b-none max-md:border-b-0 -->
     <div
-      class="flex items-center justify-center pl-[450px] max-xl:pl-0 bg-bgcolor-blue max-md:rounded-b-none max-md:border-b-0 bg-opacity-10 absolute top-0 left-0 backdrop-blur-[10px] w-[100%] h-[100%] z-10 border-[1.5px] max-md:border-[0.81px] border-bgcolor-blue border-opacity-50 rounded-[88px] max-md:rounded-[47.58px] border-solid mt-[200px] max-md:mt-[100px]"
+      class="flex items-center justify-center  
+      pl-[450px] max-xl:pl-0 bg-bgcolor-blue bg-opacity-10
+       absolute top-0 left-0 backdrop-blur-[10px] w-[100%] h-[100%] z-10 border-[1.5px]  max-md:border-[0.81px] border-bgcolor-blue border-opacity-50 rounded-[88px] max-md:rounded-[47.58px] border-solid mt-[200px] max-md:mt-[100px]"
     >
       <div
-        class="w-[470px] h-[553px] max-md:h-[483px] max-md:bottom-[-423px] max-md:w-[100%] max-md:z-[60] px-[40px] py-[20px] z-40 backdrop-blur-[15px] absolute bg-bgcolor-blue bg-opacity-[7%] border-[1px] rounded-[22px] border-solid border-bgcolor-blue border-opacity-50"
+        class="w-[470px] h-[553px] max-md:h-[483px] max-md:bottom-[-423px] 
+        max-md:w-[110%] max-md:z-[60] px-[40px] max-md:px-[10px] z-40 backdrop-blur-[33px] 
+        absolute bg-bgcolor-blue bg-opacity-[7%] border-[1px] rounded-[22px] border-solid border-bgcolor-blue border-opacity-50
+        items-center flex"
       >
         <div class="">
           <h3
@@ -99,7 +104,7 @@
             </li>
           </ul>
           <div
-            class="mt-[40px] max-xl:mt-[0px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer"
+            class="mt-[40px] max-md:mt-[20px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer"
           >
             <p class="text-lg font-medium text-white">Курсга ёзилиш</p>
           </div>
@@ -137,5 +142,8 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 12px;
+}
+.sax{
+  filter: blur(1px);
 }
 </style>
