@@ -63,7 +63,7 @@
             </li>
           </ul>
           <button
-            class="mt-[40px] max-xl:mt-[0px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer text-lg font-medium text-white">
+            class="mt-[40px] max-xl:mt-[0px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer text-lg font-medium text-white ">
             Курсга ёзилиш
           </button>
         </div>

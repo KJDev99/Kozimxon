@@ -254,7 +254,6 @@ button:hover {
 
     .closeMenu {
         margin-top: 15px;
-        margin-right: 10px;
     }
 
     .nav_list {
