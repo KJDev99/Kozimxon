@@ -1,20 +1,23 @@
 <template>
-  <div class="w-[100%] h-[720px] max-md:h-[389px] relative sectionTwo mt-[100px]  ">
+  <div
+    class="w-[100%] h-[720px] max-md:h-[389px] relative sectionTwo mt-[100px] px-2"
+  >
     <!-- flex items-center justify-center  pl-[450px] max-lg:pl-0  max-md:rounded-b-none max-md:border-b-0 -->
     <div
-      class="flex items-center justify-center  
-      pl-[450px] max-xl:pl-0 bg-bgcolor-blue bg-opacity-10
-       absolute top-0 left-0 backdrop-blur-[10px] w-[100%] h-[100%] z-10 border-[1.5px]  max-md:border-[0.81px] border-bgcolor-blue border-opacity-50 rounded-[88px] max-md:rounded-[47.58px] border-solid mt-[200px] max-md:mt-[100px]"
+      class="flex items-center justify-center 
+      pl-[450px] max-xl:pl-0 bg-bgcolor-blue max-md:rounded-b-none max-md:border-b-0 
+      bg-opacity-10 absolute top-0 left-0 backdrop-blur-[10px] w-[100%] h-[100%] z-10 
+      border-[1.5px] max-md:border-[0.81px] border-bgcolor-blue border-opacity-50 rounded-[88px] 
+      max-md:rounded-[47.58px] border-solid mt-[200px] max-md:mt-[100px] "
     >
       <div
-        class="w-[470px] h-[553px] max-md:h-[483px] max-md:bottom-[-423px] 
-        max-md:w-[110%] max-md:z-[60] px-[40px] max-md:px-[10px] z-40 backdrop-blur-[33px] 
-        absolute bg-bgcolor-blue bg-opacity-[7%] border-[1px] rounded-[22px] border-solid border-bgcolor-blue border-opacity-50
-        items-center flex"
+        class="content w-[470px] h-[553px] max-md:h-[483px] max-md:bottom-[-423px] 
+        max-md:z-[60] px-[40px] py-[20px] z-40 backdrop-blur-[15px] absolute bg-bgcolor-blue bg-opacity-[7%]
+         border-[1px] rounded-[22px] border-solid border-bgcolor-blue border-opacity-50 max-md:px-[20px]"
       >
         <div class="">
           <h3
-            class="text-4xl max-md:text-2xl text-white leading-[48px] max-md:leading-[22px] mb-[20px] max-xl:text-3xl max-xl:leading-[36px]"
+            class="text-4xl max-md:text-2xl text-white leading-[48px] max-md:leading-[22px]  mb-[20px] max-xl:text-3xl max-xl:leading-[36px]"
           >
             Курс ментори ким?
           </h3>
@@ -104,7 +107,7 @@
             </li>
           </ul>
           <div
-            class="mt-[40px] max-md:mt-[20px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer"
+            class="mt-[40px] max-xl:mt-[0px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer"
           >
             <p class="text-lg font-medium text-white">Курсга ёзилиш</p>
           </div>
@@ -118,7 +121,7 @@
       <img
         src="../assets/imgs/check 3d.png"
         alt=""
-        class="absolute bottom-[-100px] max-md:bottom-[-20px] md:left-[-50px] max-md:right-[-30px] md:z-50 max-md:z-[100] w-[244px] max-md:w-[139px]"
+        class="absolute bottom-[-100px] max-md:bottom-[-20px] md:left-[-50px] max-md:right-[-30px] md:z-50 max-md:z-[100] w-[244px] max-md:w-[139px] max-sm:w-[80px] max-sm:bottom-[20px] max-sm:right-[-20px]"
       />
       <img
         src="../assets/imgs/rocket.png"
@@ -143,7 +146,9 @@
   gap: 8px;
   margin-bottom: 12px;
 }
-.sax{
-  filter: blur(1px);
+@media (max-width: 768px) {
+  .content{
+    width: calc(100% + 2rem) !important;
+  }
 }
 </style>

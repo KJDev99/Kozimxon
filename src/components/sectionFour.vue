@@ -1,5 +1,5 @@
 <template>
-    <div class="sec_four">
+    <div class="sec_four px-2">
         <div class="four_title">
             Ўқувчиларимиз фикрлари
         </div>
