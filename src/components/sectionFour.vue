@@ -35,21 +35,14 @@
                     allowfullscreen></iframe>
             </div>
         </div>
-        <div class="four_content-mobile">
-            aaa
-            <fwb-carousel :pictures="pictures" />
-        </div>
+    </div>
+    <div class="four_content-mobile">
+
     </div>
 </template>
 
-<script setup>
-import { FwbCarousel } from 'flowbite-vue'
+<script >
 
-const pictures = [
-    { src: '@/assets/imgs/Header (1).png', alt: 'Image 1' },
-    { src: '@/assets/imgs/Header (3).png', alt: 'Image 2' },
-    { src: '@/assets/imgs/Header (1).png', alt: 'Image 3' },
-]
 </script>
 
 <style lang="css">
@@ -71,22 +64,18 @@ const pictures = [
     border-radius: 22px;
 }
 
-.ytp-gradient-top {
-    display: none !important;
-}
-
-.ytp-show-cards-title {
-    display: none !important;
-    opacity: 0 !important;
-}
-
-.ytp-large-play-button {
-    display: none !important;
+.four_content-mobile {
+    display: none;
 }
 
 @media (max-width: 768px) {
     .four_content-desktop {
         display: none !important;
     }
+
+    .four_content-mobile {
+        display: block;
+    }
+
 }
 </style>
