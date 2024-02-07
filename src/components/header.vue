@@ -1,35 +1,48 @@
 <template>
     <header class="header">
         <div class="container">
-            <div class="nav_content flex justify-between w-full pt-6 items-center">
+            <div :class="`nav_content flex justify-between w-full pt-6 items-center ${activeClass && 'active'}`">
                 <div class="logo">
                     <img src="@/assets/imgs/logo (1).png" alt="">
                 </div>
-                <ul class="nav_list flex">
-                    <li class="nav_list"><a href="#">Устоз ҳақида <img src="../assets/imgs/Line 1.png" alt=""> </a></li>
-                    <li class="nav_list"><a href="#">Курс дастури <img src="../assets/imgs/Line 1.png" alt=""> </a></li>
-                    <li class="nav_list"><a href="#">Тарифлар <img src="../assets/imgs/Line 1.png" alt=""> </a></li>
+                <ul :class="`nav_list flex ${activeClass && 'nav_list_open'}`">
+                    <li class="nav_link"><a href="#">Устоз ҳақида <img src="../assets/imgs/Line 1.png" alt=""> </a></li>
+                    <li class="nav_link"><a href="#">Курс дастури <img src="../assets/imgs/Line 1.png" alt=""> </a></li>
+                    <li class="nav_link"><a href="#">Тарифлар <img src="../assets/imgs/Line 1.png" alt=""> </a></li>
                 </ul>
+                <img @click="openMenu()" src="../assets/imgs/openMenu.png" :class="`openMenu ${activeClass && 'hidden'}`">
+                <img @click="closeMenu()" src="../assets/imgs/closeMenu.png" alt=""
+                    :class="`closeMenu ${activeClass && 'block'}`">
             </div>
-            <div class="header_content flex">
-                <div class="header_content-left">
+            <div class="header_content flex ">
+                <div :class="`header_content-left ${activeClass && 'header_content-left_act'}`">
                     <h1>Компаниянгизни юқори поғонага олиб чиқиш даври келди.</h1>
                     <p>"Корпоратив бошқарув ва HR" курси</p>
                     <button>Иштирок этиш</button>
                 </div>
                 <div class="header_content-right">
                     <img src="../assets/imgs/pic (1).png" alt="">
-
                 </div>
             </div>
             <img src="../assets/imgs/Group 9 (1).png" alt="" class="head_pos-one">
-            <img src="../assets/imgs/Ustki nurlar - shu holatda saqlab ishlatish mumkin.svg" class="header-ustki-nur"
-                alt="">
+            <img src="../assets/imgs/Ustki nurlar - shu holatda saqlab ishlatish mumkin.svg" class="header-ustki-nur">
         </div>
     </header>
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+const activeClass = ref(false)
+
+function openMenu() {
+    activeClass.value = true
+    console.log(activeClass.value);
+}
+function closeMenu() {
+    activeClass.value = false
+    console.log(activeClass.value);
+}
 
 </script>
 
@@ -152,6 +165,11 @@
     opacity: 1;
 }
 
+.closeMenu,
+.openMenu {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     .head_pos-one,
@@ -161,6 +179,10 @@
 
     .header {
         height: 746px;
+        background: url('../assets/imgs/Header (3).png'), #000;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         overflow: visible;
     }
 
@@ -198,10 +220,6 @@
         margin-top: 20px;
     }
 
-    .nav_list {
-        display: none;
-    }
-
     .header_content-right img {
         width: 552.74px;
         height: 487.71px;
@@ -211,10 +229,78 @@
         transform: translateX(-50%);
     }
 
-
-
     .header_content-left {
         margin-top: 389px;
     }
+
+    .nav_content {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    .openMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .closeMenu {
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    .nav_list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: -110px;
+        right: 40px;
+        align-items: flex-end;
+        z-index: 9 !important;
+        transition: 0.3s;
+    }
+
+    .nav_list_open {
+        top: 90px;
+    }
+
+    .nav_list a {
+        width: max-content;
+        height: 36px;
+        color: rgba(255, 255, 255, 1);
+        justify-content: end;
+
+    }
+
+    .nav_list a img {
+        display: none;
+    }
+
+    .nav_list a:hover {
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        padding: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .active {
+        width: 100%;
+        height: 746px;
+        z-index: 11;
+        background-color: rgba(2, 45, 45, 0.4);
+        backdrop-filter: blur(5px);
+        position: absolute;
+        left: 0;
+        top: 0;
+        align-items: flex-start !important;
+        transition: 0.3s;
+    }
+
+    .header_content-left_act {
+        margin-top: 485px;
+    }
+
 }
 </style>

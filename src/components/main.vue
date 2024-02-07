@@ -2,12 +2,18 @@
     <div class="w-[100%] main_big">
         <div class="container">
             <sectionOne />
+            <sectionTwo />
+            <sectionThreeVue />
+            <sectionFour />
         </div>
     </div>
 </template>
 
 <script setup>
 import sectionOne from './sectionOne.vue';
+import sectionTwo from './sectionTwo.vue';
+import sectionThreeVue from './sectionThree.vue';
+import sectionFour from './sectionFour.vue';
 </script>
 
 <style lang="css">
