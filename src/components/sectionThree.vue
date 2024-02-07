@@ -1,9 +1,9 @@
 <template>
-    <div class="sec_three">
+    <div class="sec_three px-2">
         <h3 class="three_title">Курс дастури</h3>
         <vue-collapsible-panel-group accordion
             class="grid lg:grid-cols-2 max-md:grid-cols-1 lg:gap-x-10 lg:gap-y-10 max-md:gap-y-2.5">
-            <vue-collapsible-panel>
+            <vue-collapsible-panel :expanded="false">
                 <template #title>
                     <div class="acc_num">
                         <p>1</p>
@@ -249,7 +249,15 @@
     margin-top: 40px;
 }
 
+.sec_three {
+    margin-top: 320px;
+}
+
 @media (max-width: 768px) {
+    .sec_three {
+        margin-top: 580px;
+    }
+
     .acc_num {
         display: none;
     }

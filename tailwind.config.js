@@ -10,16 +10,16 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem", // Default padding for container
+        DEFAULT: "0rem", // Default padding for container
         sm: "2rem", // Padding for small screens
         lg: "4rem", // Padding for large screens
         xl: "5rem", // Padding for extra large screens
       },
     },
-    colors: { 
-      "btn-blue":'#10A6B9',
-      'white': '#ffffff',
-      "bgcolor-blue":'#15D2E8'
-    }
+    colors: {
+      "btn-blue": "#10A6B9",
+      white: "#ffffff",
+      "bgcolor-blue": "#15D2E8",
+    },
   },
 };
