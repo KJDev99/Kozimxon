@@ -37,11 +37,9 @@ const activeClass = ref(false)
 
 function openMenu() {
     activeClass.value = true
-    console.log(activeClass.value);
 }
 function closeMenu() {
     activeClass.value = false
-    console.log(activeClass.value);
 }
 
 </script>

@@ -2,7 +2,7 @@
     <div class="sec_three px-2">
         <h3 class="three_title">Курс дастури</h3>
         <vue-collapsible-panel-group accordion
-            class="grid lg:grid-cols-2 max-md:grid-cols-1 lg:gap-x-10 lg:gap-y-10 max-md:gap-y-2.5">
+            class="grid items-start lg:grid-cols-2 max-md:grid-cols-1 lg:gap-x-10 lg:gap-y-10 max-md:gap-y-2.5">
             <vue-collapsible-panel :expanded="false">
                 <template #title>
                     <div class="acc_num">
