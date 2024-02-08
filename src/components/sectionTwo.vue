@@ -20,35 +20,35 @@
           </h5>
           <ul class="">
             <li>
-              <img src="../assets/imgs/Frame.png" alt="" class="w-[20px] h-[20px]" />
+              <img src="../assets/imgs/Frame.webp" alt="" class="w-[20px] h-[20px]" />
               <p class="text-lg leading-[23px] text-white font-normal max-md:text-sm max-md:leading-[18px]">
                 АҚШ, Европа ва Япония таълими тарбияланувчиси;
               </p>
             </li>
 
             <li>
-              <img src="../assets/imgs/Frame.png" alt="" class="w-[20px] h-[20px]" />
+              <img src="../assets/imgs/Frame.webp" alt="" class="w-[20px] h-[20px]" />
               <p class="text-lg leading-[23px] text-white font-normal max-md:text-sm max-md:leading-[18px]">
                 Procter & Gamble компаниясидаги HR Manager лавозими;
               </p>
             </li>
 
             <li>
-              <img src="../assets/imgs/Frame.png" alt="" class="w-[20px] h-[20px]" />
+              <img src="../assets/imgs/Frame.webp" alt="" class="w-[20px] h-[20px]" />
               <p class="text-lg leading-[23px] text-white font-normal max-md:text-sm max-md:leading-[18px]">
                 Саудия Арабистонидаги Ислом Тараққиёт Банки ходими;
               </p>
             </li>
 
             <li>
-              <img src="../assets/imgs/Frame.png" alt="" class="w-[20px] h-[20px]" />
+              <img src="../assets/imgs/Frame.webp" alt="" class="w-[20px] h-[20px]" />
               <p class="text-lg leading-[23px] text-white font-normal max-md:text-sm max-md:leading-[18px]">
                 Қадриятлар академияси асосчиси;
               </p>
             </li>
 
             <li>
-              <img src="../assets/imgs/Frame.png" alt="" class="w-[20px] h-[20px]" />
+              <img src="../assets/imgs/Frame.webp" alt="" class="w-[20px] h-[20px]" />
               <p class="text-lg leading-[23px] text-white font-normal max-md:text-sm max-md:leading-[18px]">
                 Корпоратив бошқарув, HR бўйича профессионал тренинг ваконсалтинг
                 хизматлари;
@@ -56,7 +56,7 @@
             </li>
 
             <li>
-              <img src="../assets/imgs/Frame.png" alt="" class="w-[20px] h-[20px]" />
+              <img src="../assets/imgs/Frame.webp" alt="" class="w-[20px] h-[20px]" />
               <p class="text-lg leading-[23px] text-white font-normal max-md:text-sm max-md:leading-[18px]">
                 Alliance Business Club асосчиларидан бири.
               </p>
@@ -69,14 +69,14 @@
           </button>
         </div>
       </div>
-      <img src="../assets/imgs/akani suratlari.png" alt=""
+      <img src="../assets/imgs/akani suratlari.webp" alt=""
         class="absolute top-[-90px] left-0 z-30 w-[627px] max-md:w-[340px]" />
-      <img src="../assets/imgs/check 3d.png" alt=""
+      <img src="../assets/imgs/check 3d.webp" alt=""
         class="absolute bottom-[-100px] max-md:bottom-[-20px] md:left-[-50px] max-md:right-[-30px] md:z-50 max-md:z-[100] w-[244px] max-md:w-[139px] max-sm:w-[80px] max-sm:bottom-[20px] max-sm:right-[-20px]" />
-      <img src="../assets/imgs/rocket.png" alt=""
+      <img src="../assets/imgs/rocket.webp" alt=""
         class="absolute bottom-[-150px] max-md:bottom-[-10px] right-[-50px] max-md:left-[-30px] z-30 w-[380px] max-md:w-[132px]" />
     </div>
-    <img src="../assets/imgs/portfoio.png" alt=""
+    <img src="../assets/imgs/portfoio.webp" alt=""
       class="absolute top-[200px] z-2 max-md:top-[100px] right-[-70px] max-md:right-[-30px] w-[340px] max-md:w-[150px]" />
   </div>
 </template>

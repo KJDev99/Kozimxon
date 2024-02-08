@@ -28,7 +28,7 @@ import footerVue from './footer.vue';
 
 <style lang="css">
 .main_big {
-    background: url('../assets/imgs/blur bg.png') center/cover no-repeat;
+    background: url('../assets/imgs/blur bg.webp') center/cover no-repeat;
     width: 100%;
     height: max-content !important;
     overflow-x: hidden;

@@ -32,9 +32,9 @@
           Рўйҳатдан ўтиш
         </button>
       </div>
-      <img src="../assets/imgs/kozim aka.png" alt=""
+      <img src="../assets/imgs/kozim aka.webp" alt=""
         class="absolute top-[-125px] right-0 h-[523px] max-lg:w-[100%] max-lg:h-auto max-sm:top-[-150px] eight_mobile" />
-      <img src="../assets/imgs/kozim aka (1).png" alt=""
+      <img src="../assets/imgs/kozim aka (1).webp" alt=""
         class="absolute top-[-125px] right-0 h-[523px] max-lg:w-[100%] max-lg:h-auto max-sm:top-[-150px] eight_desktop" />
     </div>
   </div>

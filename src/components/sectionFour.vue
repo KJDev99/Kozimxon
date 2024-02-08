@@ -9,42 +9,42 @@
                     title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                    allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="four_item">
                 <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
                     title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                    allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="four_item">
                 <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
                     title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                    allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="four_item">
                 <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
                     title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                    allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="four_item">
                 <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
                     title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                    allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="four_item">
                 <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
                     title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                    allowfullscreen loading="lazy"></iframe>
             </div>
         </div>
         <div class="four_content-mobile">
@@ -55,42 +55,42 @@
                         title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                        allowfullscreen loading="lazy"></iframe>
                 </swiper-slide>
                 <swiper-slide>
                     <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
                         title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                        allowfullscreen loading="lazy"></iframe>
                 </swiper-slide>
                 <swiper-slide>
                     <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
                         title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                        allowfullscreen loading="lazy"></iframe>
                 </swiper-slide>
                 <swiper-slide>
                     <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
                         title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                        allowfullscreen loading="lazy"></iframe>
                 </swiper-slide>
                 <swiper-slide>
                     <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
                         title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                        allowfullscreen loading="lazy"></iframe>
                 </swiper-slide>
                 <swiper-slide>
                     <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
                         title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                        allowfullscreen loading="lazy"></iframe>
                 </swiper-slide>
 
             </swiper>

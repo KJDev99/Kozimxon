@@ -6,12 +6,12 @@
                     <img src="@/assets/imgs/logo.svg" alt="">
                 </div>
                 <ul :class="`nav_list flex ${activeClass && 'nav_list_open'}`">
-                    <li class="nav_link"><a href="#">Устоз ҳақида <img src="../assets/imgs/Line 1.png" alt=""> </a></li>
-                    <li class="nav_link"><a href="#">Курс дастури <img src="../assets/imgs/Line 1.png" alt=""> </a></li>
-                    <li class="nav_link"><a href="#">Тарифлар <img src="../assets/imgs/Line 1.png" alt=""> </a></li>
+                    <li class="nav_link"><a href="#">Устоз ҳақида <img src="../assets/imgs/Line 1.webp" alt=""> </a></li>
+                    <li class="nav_link"><a href="#">Курс дастури <img src="../assets/imgs/Line 1.webp" alt=""> </a></li>
+                    <li class="nav_link"><a href="#">Тарифлар <img src="../assets/imgs/Line 1.webp" alt=""> </a></li>
                 </ul>
-                <img @click="openMenu()" src="../assets/imgs/openMenu.png" :class="`openMenu ${activeClass && 'hidden'}`">
-                <img @click="closeMenu()" src="../assets/imgs/closeMenu.png" alt=""
+                <img @click="openMenu()" src="../assets/imgs/openMenu.webp" :class="`openMenu ${activeClass && 'hidden'}`">
+                <img @click="closeMenu()" src="../assets/imgs/closeMenu.webp" alt=""
                     :class="`closeMenu ${activeClass && 'block'}`">
             </div>
             <div class="header_content flex ">
@@ -21,10 +21,10 @@
                     <button>Иштирок этиш</button>
                 </div>
                 <div class="header_content-right">
-                    <img src="../assets/imgs/pic (1).png" alt="">
+                    <img src="../assets/imgs/pic (1).webp" alt="" rel="preload">
                 </div>
             </div>
-            <img src="../assets/imgs/Group 9 (1).png" alt="" class="head_pos-one">
+            <img src="../assets/imgs/Group 9 (1).webp" alt="" class="head_pos-one">
             <img src="../assets/imgs/Ustki nurlar - shu holatda saqlab ishlatish mumkin.svg" class="header-ustki-nur">
         </div>
     </header>
@@ -46,7 +46,7 @@ function closeMenu() {
 
 <style>
 .header {
-    background: url('../assets/imgs/Header (1).png') center/cover no-repeat;
+    background: url('../assets/imgs/Header (1).webp') center/cover no-repeat;
     height: 900px;
     position: relative;
     overflow: hidden;
@@ -188,7 +188,7 @@ button:hover {
 
     .header {
         height: 746px;
-        background: url('../assets/imgs/Header (3).png'), #000;
+        background: url('../assets/imgs/Header (3).webp'), #000;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

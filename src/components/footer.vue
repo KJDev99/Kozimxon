@@ -22,7 +22,7 @@
       <li class="max-md:absolute max-md:right-0 max-md:bottom-[-100px]">
         <p>Ишлаб чиқарувчи:</p>
         <div class="w-[100%] flex justify-end">
-          <img src="../assets/imgs/qwerty.png" alt="" class="h-[22px]">
+          <img src="../assets/imgs/qwerty.webp" alt="" class="h-[22px]">
         </div>
       </li>
     </ul>
