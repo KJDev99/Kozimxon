@@ -14,6 +14,7 @@ import sectionOne from './sectionOne.vue';
 import sectionTwo from './sectionTwo.vue';
 import sectionThree from './sectionThree.vue';
 import sectionFour from './sectionFour.vue';
+
 </script>
 
 <style lang="css">
