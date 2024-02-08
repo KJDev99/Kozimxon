@@ -2,8 +2,8 @@
     <div class="sec_three px-2">
         <h3 class="three_title">Курс дастури</h3>
         <vue-collapsible-panel-group accordion
-            class="grid lg:grid-cols-2 max-md:grid-cols-1 lg:gap-x-10 lg:gap-y-10 max-md:gap-y-2.5">
-            <vue-collapsible-panel :expanded="false">
+            class="grid items-start lg:grid-cols-2 max-md:grid-cols-1 lg:gap-x-10 lg:gap-y-10 max-md:gap-y-2.5">
+            <vue-collapsible-panel :expanded="true">
                 <template #title>
                     <div class="acc_num">
                         <p>1</p>
@@ -275,13 +275,13 @@
     }
 
     .vcpg[data-v-63943e43] .vcp__header-title {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 15px;
         padding: 12px 10px;
     }
 
     .vcpg[data-v-63943e43] .vcp__body {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 15px;
         padding-left: 20px;
     }

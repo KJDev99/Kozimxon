@@ -3,7 +3,7 @@
         <div class="container">
             <div :class="`nav_content flex justify-between w-full pt-6 items-center ${activeClass && 'active'}`">
                 <div class="logo">
-                    <img src="@/assets/imgs/logo (1).png" alt="">
+                    <img src="@/assets/imgs/logo.svg" alt="">
                 </div>
                 <ul :class="`nav_list flex ${activeClass && 'nav_list_open'}`">
                     <li class="nav_link"><a href="#">Устоз ҳақида <img src="../assets/imgs/Line 1.png" alt=""> </a></li>
@@ -37,11 +37,9 @@ const activeClass = ref(false)
 
 function openMenu() {
     activeClass.value = true
-    console.log(activeClass.value);
 }
 function closeMenu() {
     activeClass.value = false
-    console.log(activeClass.value);
 }
 
 </script>
@@ -61,7 +59,7 @@ function closeMenu() {
 
 .header_content-left h1 {
     margin-top: 106px;
-    font-size: 42px;
+    font-size: 50px;
     font-weight: 500;
     line-height: 48px;
     letter-spacing: -0.04em;
@@ -138,6 +136,9 @@ function closeMenu() {
     color: rgba(255, 255, 255, 1);
     justify-content: center;
     border: none;
+    padding: 7px, 11px, 7px, 11px;
+    border-radius: 7px;
+    border: 1.5px solid transparent
 }
 
 .nav_list a img {
@@ -147,8 +148,6 @@ function closeMenu() {
 }
 
 .nav_list a:hover {
-    font-size: 18px;
-    font-weight: 500;
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
@@ -168,6 +167,16 @@ function closeMenu() {
 .closeMenu,
 .openMenu {
     display: none;
+}
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    color: rgba(16, 166, 185, 1);
+    background: white;
+    border-color: white;
 }
 
 @media (max-width: 768px) {
@@ -245,7 +254,6 @@ function closeMenu() {
 
     .closeMenu {
         margin-top: 15px;
-        margin-right: 10px;
     }
 
     .nav_list {

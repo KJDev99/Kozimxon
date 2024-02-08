@@ -3,9 +3,8 @@
         <div class="container">
             <sectionOne />
             <sectionTwo />
-            <sectionThreeVue />
+            <sectionThree />
             <sectionFour />
-            <footerVue/>
         </div>
     </div>
 </template>
@@ -13,9 +12,8 @@
 <script setup>
 import sectionOne from './sectionOne.vue';
 import sectionTwo from './sectionTwo.vue';
-import sectionThreeVue from './sectionThree.vue';
+import sectionThree from './sectionThree.vue';
 import sectionFour from './sectionFour.vue';
-import footerVue from './footer.vue';
 </script>
 
 <style lang="css">
