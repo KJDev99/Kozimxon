@@ -8,4 +8,8 @@ import headerVue from './components/header.vue';
 import mainVue from './components/main.vue'
 </script>
 
-<style></style>
+<style>
+
+.el-form-item__error{
+ color: red;
+}</style>

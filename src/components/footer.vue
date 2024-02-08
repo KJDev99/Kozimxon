@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[100px] mx-2">
+  <div class="mt-[100px] mx-2 max-lg:mt-[250px]  max-sm:mt-[120px]">
     <ul class="relative justify-between text-base text-white md:flex max-md:text-sm">
       <li class="">
         <p>Батафсил маълумот учун:</p>
