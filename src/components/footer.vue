@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[100px] mx-2 max-lg:mt-[250px]  max-sm:mt-[120px]">
+  <div class="mt-[100px] mb-[44px] mx-2 max-lg:mt-[250px]  max-sm:mt-[120px]">
     <ul class="relative justify-between text-base text-white md:flex max-md:text-sm">
       <li class="">
         <p>Батафсил маълумот учун:</p>
@@ -22,7 +22,7 @@
       <li class="max-md:absolute max-md:right-0 max-md:bottom-[-100px]">
         <p>Ишлаб чиқарувчи:</p>
         <div class="w-[100%] flex justify-end">
-            <img src="../assets/imgs/qwerty.png" alt="" class="h-[22px]">
+          <img src="../assets/imgs/qwerty.png" alt="" class="h-[22px]">
         </div>
       </li>
     </ul>
@@ -30,7 +30,7 @@
 </template>
 <script setup></script>
 <style lang="css">
-ul li p{
-    padding-bottom: 5px;
+ul li p {
+  padding-bottom: 5px;
 }
 </style>

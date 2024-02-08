@@ -30,7 +30,14 @@ import footerVue from './footer.vue';
 .main_big {
     background: url('../assets/imgs/blur bg.png') center/cover no-repeat;
     width: 100%;
-    height: 6887px;
+    height: max-content !important;
     overflow-x: hidden;
+}
+
+@media (max-width:768px) {
+    .main_big {
+        height: 7000px;
+        padding-bottom: 300px;
+    }
 }
 </style>    
