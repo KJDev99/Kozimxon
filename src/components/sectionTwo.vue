@@ -63,9 +63,8 @@
             </li>
           </ul>
           <button
-            class="border-[1px] border-solid max-md:mt-[30px] text-lg font-medium border-bgcolor-blue border-opacity-50 bg-btn-blue text-white hover:text-btn-blue hover:bg-white w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer"
-          >
-            class="mt-[40px] max-xl:mt-[0px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer text-lg font-medium text-white ">
+            class="border-[1px] border-solid max-md:mt-[30px] text-lg font-medium border-bgcolor-blue border-opacity-50 bg-btn-blue text-white hover:text-btn-blue hover:bg-white w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer">
+
             Курсга ёзилиш
           </button>
         </div>
