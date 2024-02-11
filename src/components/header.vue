@@ -57,7 +57,7 @@ function closeMenu() {
 
 <style>
 .header {
-    background: url('../assets/imgs/Header (1).png') center/cover no-repeat;
+    background: url('../assets/imgs/Header (1).webp') center/cover no-repeat;
     height: 900px;
     position: relative;
     overflow: hidden;
