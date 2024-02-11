@@ -2,69 +2,40 @@
     <div id="tarif" class="sec_five max-md:px-2">
         <h3 class="five_title">Тарифлар</h3>
         <div class="five_content grid lg:grid-cols-4 msx-md:grid-cols-1 gap-x-5">
-            <div class="five_item">
-                <div class="five_item_title">STANDART</div>
-                <div class="five_item_text">(1 та қатнашчи)</div>
-                <div class="five_item_body five_item_act">
+            <div class="five_item" v-for="tarif of tariff" :key="tarif.id">
+                <div class="five_item_title">{{ tarif.name }}</div>
+                <div class="five_item_text">{{ tarif.head_text }}</div>
+                <div :class="`five_item_body ${option.enabled ? 'five_item_act' : 'five_item_noact'}`"
+                    v-for="option of tarif.options" :key="option.id">
                     <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
                     <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
-                    <p>5 ҳафталик курс</p>
-                </div>
-                <div class="five_item_body five_item_noact">
-                    <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
-                    <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
-                    <p>Kaizen дарсига 2 та ходим жалб этиш</p>
-                </div>
-            </div>
-            <div class="five_item">
-                <div class="five_item_title">КОРПОРАТИВ</div>
-                <div class="five_item_text">(3 та иштирокчи бир корхонадан)</div>
-                <div class="five_item_body five_item_act">
-                    <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
-                    <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
-                    <p>5 ҳафталик курс</p>
-                </div>
-                <div class="five_item_body five_item_noact">
-                    <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
-                    <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
-                    <p>Kaizen дарсига 2 та ходим жалб этиш</p>
-                </div>
-            </div>
-            <div class="five_item">
-                <div class="five_item_title">PREMIUM</div>
-                <div class="five_item_text">(3 та иштирокчи бир корхонадан)</div>
-                <div class="five_item_body five_item_act">
-                    <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
-                    <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
-                    <p>5 ҳафталик курс</p>
-                </div>
-                <div class="five_item_body five_item_noact">
-                    <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
-                    <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
-                    <p>Kaizen дарсига 2 та ходим жалб этиш</p>
-                </div>
-            </div>
-            <div class="five_item">
-                <div class="five_item_title">VIP</div>
-                <div class="five_item_text">(3 та иштирокчи бир корхонадан)</div>
-                <div class="five_item_body five_item_act">
-                    <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
-                    <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
-                    <p>5 ҳафталик курс</p>
-                </div>
-                <div class="five_item_body five_item_noact">
-                    <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
-                    <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
-                    <p>Kaizen дарсига 2 та ходим жалб этиш</p>
+                    <p>{{ option.option }}</p>
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
+import axios from 'axios';
 export default {
-
-}
+    data() {
+        return {
+            tariff: [],
+        }
+    },
+    methods: {
+        async getVideoss() {
+            let res = await axios.get(`http://api.kozimhon.uz/api/tariffs`)
+            if (res.status == 200) {
+                this.tariff = [...res.data]
+                console.log(this.tariff);
+            }
+        }
+    },
+    mounted() {
+        this.getVideoss()
+    }
+};
 </script>
 <style lang="css">
 .sec_five {

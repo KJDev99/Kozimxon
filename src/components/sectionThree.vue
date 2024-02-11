@@ -3,96 +3,20 @@
         <h3 class="three_title">Курс дастури</h3>
         <vue-collapsible-panel-group accordion
             class="grid items-start lg:grid-cols-2 max-md:grid-cols-1 lg:gap-x-10 lg:gap-y-10 max-md:gap-y-2.5">
-            <vue-collapsible-panel :expanded="true">
+            <vue-collapsible-panel v-for="course of course_program" :key="course.id" :expanded="!course.id - 1">
                 <template #title>
                     <div class="acc_num">
-                        <p>1</p>
+                        <p>{{ course.id }}</p>
                     </div>
-                    <p>1-модул: HR аудит орқали компаниядаги камчиликларни аниқлаш</p>
+                    <p>{{ course.question }}</p>
                 </template>
                 <template #content>
-                    <ul>
-                        <li>Ментор кўмаги билан курс бошида компаниянгиз HR тизимини таҳлил қилиш</li>
-                        <li>HR тизимисиз компания қанча зарар кўраётганини рақамларда баҳолаш</li>
-                        <li>HR бўлимининг асосий фокуси ва қандай муаммоларни бартараф эта олади</li>
+                    <ul v-for="opt of course.options" :key="opt.id">
+                        <li>{{ opt.answer }}</li>
                     </ul>
                 </template>
             </vue-collapsible-panel>
-            <vue-collapsible-panel :expanded="false">
-                <template #title>
-                    <div class="acc_num">
-                        <p>1</p>
-                    </div>
-                    16-модул Япония тажрибаси асосида сифатли хизмат кўрсатиш тизимини жорий қилиш
-                </template>
-                <template #content>
-                    <ul>
-                        <li>Ментор кўмаги билан курс бошида компаниянгиз HR тизимини таҳлил қилиш</li>
-                        <li>HR тизимисиз компания қанча зарар кўраётганини рақамларда баҳолаш</li>
-                        <li>HR бўлимининг асосий фокуси ва қандай муаммоларни бартараф эта олади</li>
-                    </ul>
-                </template>
-            </vue-collapsible-panel>
-            <vue-collapsible-panel :expanded="false">
-                <template #title>
-                    <div class="acc_num">
-                        <p>1</p>
-                    </div>
-                    16-модул Япония тажрибаси асосида сифатли хизмат кўрсатиш тизимини жорий қилиш
-                </template>
-                <template #content>
-                    <ul>
-                        <li>Ментор кўмаги билан курс бошида компаниянгиз HR тизимини таҳлил қилиш</li>
-                        <li>HR тизимисиз компания қанча зарар кўраётганини рақамларда баҳолаш</li>
-                        <li>HR бўлимининг асосий фокуси ва қандай муаммоларни бартараф эта олади</li>
-                    </ul>
-                </template>
-            </vue-collapsible-panel>
-            <vue-collapsible-panel :expanded="false">
-                <template #title>
-                    <div class="acc_num">
-                        <p>1</p>
-                    </div>
-                    16-модул Япония тажрибаси асосида сифатли хизмат кўрсатиш тизимини жорий қилиш
-                </template>
-                <template #content>
-                    <ul>
-                        <li>Ментор кўмаги билан курс бошида компаниянгиз HR тизимини таҳлил қилиш</li>
-                        <li>HR тизимисиз компания қанча зарар кўраётганини рақамларда баҳолаш</li>
-                        <li>HR бўлимининг асосий фокуси ва қандай муаммоларни бартараф эта олади</li>
-                    </ul>
-                </template>
-            </vue-collapsible-panel>
-            <vue-collapsible-panel :expanded="false">
-                <template #title>
-                    <div class="acc_num">
-                        <p>1</p>
-                    </div>
-                    16-модул Япония тажрибаси асосида сифатли хизмат кўрсатиш тизимини жорий қилиш
-                </template>
-                <template #content>
-                    <ul>
-                        <li>Ментор кўмаги билан курс бошида компаниянгиз HR тизимини таҳлил қилиш</li>
-                        <li>HR тизимисиз компания қанча зарар кўраётганини рақамларда баҳолаш</li>
-                        <li>HR бўлимининг асосий фокуси ва қандай муаммоларни бартараф эта олади</li>
-                    </ul>
-                </template>
-            </vue-collapsible-panel>
-            <vue-collapsible-panel :expanded="false">
-                <template #title>
-                    <div class="acc_num">
-                        <p>1</p>
-                    </div>
-                    16-модул Япония тажрибаси асосида сифатли хизмат кўрсатиш тизимини жорий қилиш
-                </template>
-                <template #content>
-                    <ul>
-                        <li>Ментор кўмаги билан курс бошида компаниянгиз HR тизимини таҳлил қилиш</li>
-                        <li>HR тизимисиз компания қанча зарар кўраётганини рақамларда баҳолаш</li>
-                        <li>HR бўлимининг асосий фокуси ва қандай муаммоларни бартараф эта олади</li>
-                    </ul>
-                </template>
-            </vue-collapsible-panel>
+
         </vue-collapsible-panel-group>
         <button class="three_button">
             <a href="#registration">Жойни банд қилиш</a>
@@ -100,8 +24,27 @@
     </div>
 </template>
 
-<script setup>
-
+<script>
+import axios from 'axios';
+export default {
+    data() {
+        return {
+            course_program: [],
+        }
+    },
+    methods: {
+        async getVideoss() {
+            let res = await axios.get(`http://api.kozimhon.uz/api/course_program`)
+            if (res.status == 200) {
+                this.course_program = [...res.data]
+                console.log(this.course_program);
+            }
+        }
+    },
+    mounted() {
+        this.getVideoss()
+    }
+};
 </script>
 
 <style lang="css">

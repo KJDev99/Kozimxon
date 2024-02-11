@@ -3,66 +3,40 @@
         <h3 class="seven_title">Кўп бериладиган саволлар</h3>
         <vue-collapsible-panel-group accordion
             class="grid lg:grid-cols-2 max-md:grid-cols-1 lg:gap-x-10 lg:gap-y-10 max-md:gap-y-2.5">
-            <vue-collapsible-panel :expanded="true">
+            <vue-collapsible-panel v-for="faqs of faq" :key="faqs.id" :expanded="!faqs.id - 1">
                 <template #title>
-                    <p>Курсда қандай билим ва амалий кўникмаларим шаклланади?</p>
+                    <p>{{ faqs.question }}</p>
                 </template>
                 <template #content>
-                    Har bir modul bo'yicha keyslar real misollar bilan tanishasiz har bir dars amaliy mashg'ulotlarni
-                    (praktikani) o'z ichiga oladi. Bundan tashqari ishtirokchilar olgan bilimlarini o'z kompaniyalarida va
-                    ish joylarida qo'llashlari uchun haftalik uy vazifalar yuboriladi hamda mentorlar tomonidan tekshirilib
-                    amaliy tavsiyalar beriladi
-                </template>
-            </vue-collapsible-panel>
-            <vue-collapsible-panel :expanded="false">
-                <template #title>
-                    <p>Курсда қандай билим ва амалий кўникмаларим шаклланади?</p>
-                </template>
-                <template #content>
-                    Har bir modul bo'yicha keyslar real misollar bilan tanishasiz har bir dars amaliy mashg'ulotlarni
-                    (praktikani) o'z ichiga oladi. Bundan tashqari ishtirokchilar olgan bilimlarini o'z kompaniyalarida va
-                    ish joylarida qo'llashlari uchun haftalik uy vazifalar yuboriladi hamda mentorlar tomonidan tekshirilib
-                    amaliy tavsiyalar beriladi
-                </template>
-            </vue-collapsible-panel>
-            <vue-collapsible-panel :expanded="false">
-                <template #title>
-                    <p>Курсда қандай билим ва амалий кўникмаларим шаклланади?</p>
-                </template>
-                <template #content>
-                    Har bir modul bo'yicha keyslar real misollar bilan tanishasiz har bir dars amaliy mashg'ulotlarni
-                    (praktikani) o'z ichiga oladi. Bundan tashqari ishtirokchilar olgan bilimlarini o'z kompaniyalarida va
-                    ish joylarida qo'llashlari uchun haftalik uy vazifalar yuboriladi hamda mentorlar tomonidan tekshirilib
-                    amaliy tavsiyalar beriladi
-                </template>
-            </vue-collapsible-panel>
-            <vue-collapsible-panel :expanded="false">
-                <template #title>
-                    <p>Курсда қандай билим ва амалий кўникмаларим шаклланади?</p>
-                </template>
-                <template #content>
-                    КHar bir modul bo'yicha keyslar real misollar bilan tanishasiz har bir dars amaliy mashg'ulotlarni
-                    (praktikani) o'z ichiga oladi. Bundan tashqari ishtirokchilar olgan bilimlarini o'z kompaniyalarida va
-                    ish joylarida qo'llashlari uchun haftalik uy vazifalar yuboriladi hamda mentorlar tomonidan tekshirilib
-                    amaliy tavsiyalar beriladi
-                </template>
-            </vue-collapsible-panel>
-            <vue-collapsible-panel :expanded="false">
-                <template #title>
-                    <p>Курсда қандай билим ва амалий кўникмаларим шаклланади?</p>
-                </template>
-                <template #content>
-                    Har bir modul bo'yicha keyslar real misollar bilan tanishasiz har bir dars amaliy mashg'ulotlarni
-                    (praktikani) o'z ichiga oladi. Bundan tashqari ishtirokchilar olgan bilimlarini o'z kompaniyalarida va
-                    ish joylarida qo'llashlari uchun haftalik uy vazifalar yuboriladi hamda mentorlar tomonidan tekshirilib
-                    amaliy tavsiyalar beriladi
+                    {{ faqs.answer }}
                 </template>
             </vue-collapsible-panel>
         </vue-collapsible-panel-group>
     </div>
 </template>
 
-<script setup>
+<script>
+
+import axios from 'axios';
+export default {
+
+    data() {
+        return {
+            faq: [],
+        }
+    },
+    methods: {
+        async getVideoss() {
+            let res = await axios.get(`http://api.kozimhon.uz/api/faq`)
+            if (res.status == 200) {
+                this.faq = [...res.data]
+            }
+        }
+    },
+    mounted() {
+        this.getVideoss()
+    }
+};
 
 </script>
 

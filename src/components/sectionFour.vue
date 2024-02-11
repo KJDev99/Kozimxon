@@ -4,43 +4,8 @@
             Ўқувчиларимиз фикрлари
         </div>
         <div class="four_content-desktop grid grid-cols-3 gap-5">
-            <div class="four_item">
-                <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
-                    title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="four_item">
-                <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
-                    title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="four_item">
-                <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
-                    title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="four_item">
-                <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
-                    title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="four_item">
-                <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
-                    title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="four_item">
-                <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
+            <div class="four_item" v-for="video of  opinionofourreaders " :key="video.id">
+                <iframe :src="video.youtube"
                     title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -50,49 +15,13 @@
         <div class="four_content-mobile">
             <swiper :cssMode="true" :navigation="true" :pagination="true" :mousewheel="true" :keyboard="true"
                 :modules="modules" class="mySwiper">
-                <swiper-slide>
-                    <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
+                <swiper-slide v-for="video of  opinionofourreaders " :key="video.id">
+                    <iframe :src="video.youtube"
                         title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen loading="lazy"></iframe>
                 </swiper-slide>
-                <swiper-slide>
-                    <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
-                        title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen loading="lazy"></iframe>
-                </swiper-slide>
-                <swiper-slide>
-                    <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
-                        title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen loading="lazy"></iframe>
-                </swiper-slide>
-                <swiper-slide>
-                    <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
-                        title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen loading="lazy"></iframe>
-                </swiper-slide>
-                <swiper-slide>
-                    <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
-                        title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen loading="lazy"></iframe>
-                </swiper-slide>
-                <swiper-slide>
-                    <iframe src="https://www.youtube.com/embed/o4tbI1xOa5o"
-                        title="O&#39;zbekistondagi kompaniyalarda nega HR sistema yo&#39;lga qo&#39;yilishi kerak?"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen loading="lazy"></iframe>
-                </swiper-slide>
-
             </swiper>
         </div>
     </div>
@@ -114,15 +43,26 @@ export default {
         Swiper,
         SwiperSlide,
     },
+    data() {
+        return {
+            opinionofourreaders: []
+        }
+    },
     setup() {
         return {
             modules: [Navigation, Pagination, Mousewheel, Keyboard, Autoplay],
         };
     },
+    methods: {
+        async getVideoss() {
+            let res = await axios.get(`http://api.kozimhon.uz/api/opinions_of_our_students`)
+            if (res.status == 200) {
+                this.opinionofourreaders = [...res.data]
+            }
+        }
+    },
     mounted() {
-        axios
-            .get('http://api.kozimhon.uz/admin/api/partner/')
-            .then(response => console.log(response));
+        this.getVideoss()
     }
 };
 </script>
