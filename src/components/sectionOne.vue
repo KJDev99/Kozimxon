@@ -30,9 +30,9 @@
         </p>
       </div>
     </div>
-    <button
+    <button 
       class="mt-[40px] max-xl:mt-[0px] bg-btn-blue w-[240px] max-md:w-[100%] h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer text-lg font-medium text-white max-md:mt-[30px]">
-      Жойни банд қилиш
+      <a href="#registration">Жойни банд қилиш</a>
     </button>
   </div>
 </template>

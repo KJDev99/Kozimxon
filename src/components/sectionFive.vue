@@ -1,5 +1,5 @@
 <template>
-    <div class="sec_five">
+    <div id="tarif" class="sec_five max-md:px-2">
         <h3 class="five_title">Тарифлар</h3>
         <div class="five_content grid lg:grid-cols-4 msx-md:grid-cols-1 gap-x-5">
             <div class="five_item">
@@ -17,8 +17,8 @@
                 </div>
             </div>
             <div class="five_item">
-                <div class="five_item_title">STANDART</div>
-                <div class="five_item_text">(1 та қатнашчи)</div>
+                <div class="five_item_title">КОРПОРАТИВ</div>
+                <div class="five_item_text">(3 та иштирокчи бир корхонадан)</div>
                 <div class="five_item_body five_item_act">
                     <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
                     <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
@@ -31,8 +31,8 @@
                 </div>
             </div>
             <div class="five_item">
-                <div class="five_item_title">STANDART</div>
-                <div class="five_item_text">(1 та қатнашчи)</div>
+                <div class="five_item_title">PREMIUM</div>
+                <div class="five_item_text">(3 та иштирокчи бир корхонадан)</div>
                 <div class="five_item_body five_item_act">
                     <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
                     <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
@@ -45,8 +45,8 @@
                 </div>
             </div>
             <div class="five_item">
-                <div class="five_item_title">STANDART</div>
-                <div class="five_item_text">(1 та қатнашчи)</div>
+                <div class="five_item_title">VIP</div>
+                <div class="five_item_text">(3 та иштирокчи бир корхонадан)</div>
                 <div class="five_item_body five_item_act">
                     <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
                     <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
@@ -67,6 +67,10 @@ export default {
 }
 </script>
 <style lang="css">
+.sec_five {
+    transition: 0.3s !important;
+}
+
 .sec_five .five_title {
     font-size: 36px;
     font-weight: 500;
@@ -161,6 +165,14 @@ export default {
 }
 
 @media(max-width: 768px) {
+    .sec_five .five_title {
+        font-size: 22px;
+        line-height: 22px;
+        letter-spacing: -0.04em;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
     .five_item {
         margin-bottom: 20px;
     }

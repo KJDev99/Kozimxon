@@ -9,7 +9,7 @@ import mainVue from './components/main.vue'
 </script>
 
 <style>
-
-.el-form-item__error{
- color: red;
-}</style>
+/* .el-form-item__error {
+  color: red;
+} */
+</style>

@@ -36,8 +36,8 @@ import footerVue from './footer.vue';
 
 @media (max-width:768px) {
     .main_big {
-        height: 7000px;
-        padding-bottom: 300px;
+        /* height: 7000px; */
+        /* padding-bottom: 300px; */
     }
 }
 </style>    

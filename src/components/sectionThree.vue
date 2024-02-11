@@ -1,5 +1,5 @@
 <template>
-    <div class="sec_three px-2">
+    <div id="courses" class="sec_three px-2">
         <h3 class="three_title">Курс дастури</h3>
         <vue-collapsible-panel-group accordion
             class="grid items-start lg:grid-cols-2 max-md:grid-cols-1 lg:gap-x-10 lg:gap-y-10 max-md:gap-y-2.5">
@@ -94,7 +94,9 @@
                 </template>
             </vue-collapsible-panel>
         </vue-collapsible-panel-group>
-        <button class="three_button">Жойни банд қилиш</button>
+        <button class="three_button">
+            <a href="#registration">Жойни банд қилиш</a>
+        </button>
     </div>
 </template>
 

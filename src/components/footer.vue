@@ -1,29 +1,29 @@
 <template>
   <div class="mt-[100px] mb-[44px] mx-2 max-lg:mt-[250px]  max-sm:mt-[120px]">
-    <ul class="relative justify-between text-base text-white md:flex max-md:text-sm">
-      <li class="">
-        <p>Батафсил маълумот учун:</p>
-        <span class="flex gap-[10px] max-md:mb-[20px]">
-          <a href="tel:998 91 002 0509"> +998 91 002 0509;</a>
+    <ul class="flex flex-wrap justify-between text-base text-white md:flex max-md:text-sm max-md:justify-center ">
+      <li class="max-md:mb-[30px]">
+        <p class="max-md:text-center">Батафсил маълумот учун:</p>
+        <span class="flex gap-[10px]">
+          <a href="tel:998 91 002 0509">+998 91 002 0509</a>
           <span>|</span>
-          <a href="tel:998 91 001 0509"> +998 91 001 0509.</a>
+          <a href="tel:998 91 001 0509">+998 91 001 0509</a>
         </span>
       </li>
-      <li>
+      <li class="max-md:mb-[30px]">
         <p>Бизни ижтимоий тармоқларда кузатиб боринг</p>
-        <span class="flex gap-[10px] md:justify-center">
-          <a href="">Telegram</a>
+        <span class="flex gap-[10px] justify-center">
+          <a target="_blank" href="https://t.me/KozimxonTuraev">Telegram</a>
           <span>|</span>
-          <a href="">Instagram</a>
+          <a target="_blank" href="https://www.instagram.com/kozimxon_turaev/">Instagram</a>
           <span>|</span>
-          <a href="">Ameen.uz</a>
+          <a target="_blank" href="https://linkbest.ru/kozimxon_turaev">Ameen.uz</a>
         </span>
       </li>
-      <li class="max-md:absolute max-md:right-0 max-md:bottom-[-100px]">
+      <li class="max-md:mb-[30px]">
         <p>Ишлаб чиқарувчи:</p>
-        <div class="w-[100%] flex justify-end">
+        <a target="_blank" href="https://www.instagram.com/afshon_official/">
           <img src="../assets/imgs/qwerty.webp" alt="" class="h-[22px]">
-        </div>
+        </a>
       </li>
     </ul>
   </div>

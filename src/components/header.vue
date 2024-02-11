@@ -6,19 +6,26 @@
                     <img src="@/assets/imgs/logo.svg" alt="">
                 </div>
                 <ul :class="`nav_list flex ${activeClass && 'nav_list_open'}`">
-                    <li class="nav_link"><a href="#">Устоз ҳақида <img src="../assets/imgs/Line 1.webp" alt=""> </a></li>
-                    <li class="nav_link"><a href="#">Курс дастури <img src="../assets/imgs/Line 1.webp" alt=""> </a></li>
-                    <li class="nav_link"><a href="#">Тарифлар <img src="../assets/imgs/Line 1.webp" alt=""> </a></li>
+                    <li @click="closeMenu()" class="nav_link"><a href="#teacher">Устоз ҳақида <img
+                                src="../assets/imgs/Line 1.webp" alt=""> </a>
+                    </li>
+                    <li @click="closeMenu()" class="nav_link"><a href="#courses">Курс дастури <img
+                                src="../assets/imgs/Line 1.webp" alt=""> </a>
+                    </li>
+                    <li @click="closeMenu()" class="nav_link"><a href="#tarif">Тарифлар <img
+                                src="../assets/imgs/Line 1.webp" alt=""> </a></li>
                 </ul>
                 <img @click="openMenu()" src="../assets/imgs/openMenu.webp" :class="`openMenu ${activeClass && 'hidden'}`">
                 <img @click="closeMenu()" src="../assets/imgs/closeMenu.webp" alt=""
                     :class="`closeMenu ${activeClass && 'block'}`">
             </div>
-            <div class="header_content flex ">
+            <div class="header_content flex px-1 ">
                 <div :class="`header_content-left ${activeClass && 'header_content-left_act'}`">
                     <h1>Компаниянгизни юқори поғонага олиб чиқиш даври келди.</h1>
                     <p>"Корпоратив бошқарув ва HR" курси</p>
-                    <button>Иштирок этиш</button>
+                    <button>
+                        <a href="#registration">Иштирок этиш</a>
+                    </button>
                 </div>
                 <div class="header_content-right">
                     <img src="../assets/imgs/pic (1).webp" alt="" rel="preload">
@@ -34,7 +41,11 @@
 import { ref } from 'vue';
 
 const activeClass = ref(false)
+const linkHref = ref('')
+function linkClick() {
 
+
+}
 function openMenu() {
     activeClass.value = true
 }
@@ -46,7 +57,7 @@ function closeMenu() {
 
 <style>
 .header {
-    background: url('../assets/imgs/Header (1).webp') center/cover no-repeat;
+    background: url('../assets/imgs/Header (1).png') center/cover no-repeat;
     height: 900px;
     position: relative;
     overflow: hidden;

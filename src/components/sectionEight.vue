@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[100%] h-[400px] 
+  <div id="registration" class="w-[100%] h-[400px] 
    max-lg:h-[542px] sectionTwo mt-[160px] 
    max-md:mt-[220px] px-2
    max-sm:h-[550px]">

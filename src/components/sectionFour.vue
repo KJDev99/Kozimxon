@@ -108,6 +108,7 @@ import 'swiper/css/pagination';
 
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 
+import axios from 'axios';
 export default {
     components: {
         Swiper,
@@ -118,6 +119,11 @@ export default {
             modules: [Navigation, Pagination, Mousewheel, Keyboard, Autoplay],
         };
     },
+    mounted() {
+        axios
+            .get('http://api.kozimhon.uz/admin/api/partner/')
+            .then(response => console.log(response));
+    }
 };
 </script>
 
@@ -145,6 +151,10 @@ export default {
 }
 
 @media (max-width: 768px) {
+    .four_item iframe {
+        height: 350px !important;
+    }
+
     .four_content-desktop {
         display: none !important;
     }
