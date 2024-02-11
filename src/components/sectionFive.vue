@@ -25,7 +25,7 @@ export default {
     },
     methods: {
         async getVideoss() {
-            let res = await axios.get(`http://api.kozimhon.uz/api/tariffs`)
+            let res = await axios.get(`https://api.kozimhon.uz/api/tariffs`)
             if (res.status == 200) {
                 this.tariff = [...res.data]
                 console.log(this.tariff);

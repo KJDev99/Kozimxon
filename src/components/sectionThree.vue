@@ -34,7 +34,7 @@ export default {
     },
     methods: {
         async getVideoss() {
-            let res = await axios.get(`http://api.kozimhon.uz/api/course_program`)
+            let res = await axios.get(`https://api.kozimhon.uz/api/course_program`)
             if (res.status == 200) {
                 this.course_program = [...res.data]
                 console.log(this.course_program);

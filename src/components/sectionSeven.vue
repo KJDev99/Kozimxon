@@ -27,7 +27,7 @@ export default {
     },
     methods: {
         async getVideoss() {
-            let res = await axios.get(`http://api.kozimhon.uz/api/faq`)
+            let res = await axios.get(`https://api.kozimhon.uz/api/faq`)
             if (res.status == 200) {
                 this.faq = [...res.data]
             }

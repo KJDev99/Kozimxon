@@ -26,7 +26,7 @@ export default {
     },
     methods: {
         async getVideoss() {
-            let res = await axios.get(`http://api.kozimhon.uz/api/partners`)
+            let res = await axios.get(`https://api.kozimhon.uz/api/partners`)
             if (res.status == 200) {
                 this.imgArray = [...res.data]
                 this.imgArrayTop = this.imgArray.splice(0, Math.floor(this.imgArray.length / 2))

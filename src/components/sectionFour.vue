@@ -55,7 +55,7 @@ export default {
     },
     methods: {
         async getVideoss() {
-            let res = await axios.get(`http://api.kozimhon.uz/api/opinions_of_our_students`)
+            let res = await axios.get(`https://api.kozimhon.uz/api/opinions_of_our_students`)
             if (res.status == 200) {
                 this.opinionofourreaders = [...res.data]
             }
