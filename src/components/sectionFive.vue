@@ -5,12 +5,15 @@
             <div class="five_item" v-for="tarif of tariff" :key="tarif.id">
                 <div class="five_item_title">{{ tarif.name }}</div>
                 <div class="five_item_text">{{ tarif.head_text }}</div>
-                <div :class="`five_item_body ${option.enabled ? 'five_item_act' : 'five_item_noact'}`"
-                    v-for="option of tarif.options" :key="option.id">
-                    <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
-                    <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
-                    <p>{{ option.option }}</p>
+                <div class="five_body">
+                    <div :class="`five_item_body ${option.enabled ? 'five_item_act' : 'five_item_noact'}`"
+                        v-for="option of tarif.options" :key="option.id">
+                        <img class="act_img" src="../assets/imgs/Vector.svg" alt="">
+                        <img class="noact_img" src="../assets/imgs/Vector (1).svg" alt="">
+                        <p>{{ option.option }}</p>
+                    </div>
                 </div>
+                <button class="five_btn"><a href="registration">Курсга ёзилиш</a></button>
             </div>
         </div>
     </div>
@@ -28,7 +31,6 @@ export default {
             let res = await axios.get(`https://api.kozimhon.uz/api/tariffs`)
             if (res.status == 200) {
                 this.tariff = [...res.data]
-                console.log(this.tariff);
             }
         }
     },
@@ -94,8 +96,13 @@ export default {
     width: 100% !important;
 }
 
+.five_body {
+    height: 430px;
+}
+
 .five_item_body {
     display: flex;
+    align-items: start;
     margin-bottom: 14px;
 }
 
@@ -135,6 +142,25 @@ export default {
     display: block;
 }
 
+.five_btn {
+    width: 100%;
+    height: 48px;
+    padding: 13px, 33px, 13px, 33px;
+    border-radius: 7px;
+    border: 1.5px;
+    gap: 10px;
+    background:
+        linear-gradient(0deg, rgba(21, 210, 232, 0.2), rgba(21, 210, 232, 0.2));
+    border: 1.5px solid rgba(21, 210, 232, 1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+}
+
 @media(max-width: 768px) {
     .sec_five .five_title {
         font-size: 22px;
@@ -142,6 +168,10 @@ export default {
         letter-spacing: -0.04em;
         margin-top: 80px;
         margin-bottom: 30px;
+    }
+
+    .five_body {
+        height: max-content;
     }
 
     .five_item {

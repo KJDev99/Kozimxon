@@ -3,9 +3,9 @@
         <h3 class="three_title">Курс дастури</h3>
         <vue-collapsible-panel-group accordion
             class="grid items-start lg:grid-cols-2 max-md:grid-cols-1 lg:gap-x-10 lg:gap-y-10 max-md:gap-y-2.5">
-            <vue-collapsible-panel v-for="course of course_program" :key="course.id" :expanded="!course.id - 1">
+            <vue-collapsible-panel v-for="course of course_program" :key="course.id" :expanded="!(course.id - 1)">
                 <template #title>
-                    <div class="acc_num">
+                    <div :class="`acc_num ${course.id % 2 == 0 ? 'acc_numLeft' : 'acc_numRight'}`">
                         <p>{{ course.id }}</p>
                     </div>
                     <p>{{ course.question }}</p>
@@ -48,6 +48,10 @@ export default {
 </script>
 
 <style lang="css">
+html {
+  scroll-behavior: smooth !important;
+}
+
 .sec_three .three_title {
     font-size: 36px;
     font-weight: 500;
@@ -69,7 +73,6 @@ export default {
     height: 42px;
     width: 42px;
     position: absolute;
-    left: -21px;
     top: -21px;
     transform: rotate(-45deg);
     display: flex;
@@ -80,6 +83,14 @@ export default {
     line-height: 48px;
     letter-spacing: -0.04em;
     text-align: left;
+}
+
+.acc_numRight {
+    left: -21px !important;
+}
+
+.acc_numLeft {
+    right: -21px !important;
 }
 
 .acc_num p {
