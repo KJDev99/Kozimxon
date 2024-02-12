@@ -41,11 +41,7 @@
 import { ref } from 'vue';
 
 const activeClass = ref(false)
-const linkHref = ref('')
-function linkClick() {
 
-
-}
 function openMenu() {
     activeClass.value = true
 }

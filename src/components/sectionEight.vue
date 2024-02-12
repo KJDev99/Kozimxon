@@ -24,13 +24,13 @@
             <el-input v-model="ruleForm.phoneNumber" placeholder="Телефон рақамингиз" class="h-[48px]" />
           </el-form-item>
         </el-form>
-        <button class="border-[1px] border-solid max-md:mt-[30px] text-lg
+        <el-button @click="submitForm(ruleFormRef)" :plain="true" class="border-[1px] border-solid max-md:mt-[30px] text-lg
            font-medium border-bgcolor-blue border-opacity-50 bg-btn-blue
             text-white hover:text-btn-blue hover:bg-white w-[400px] 
             max-md:w-[100%] 
              h-[48px] flex items-center justify-center rounded-[7px] cursor-pointer">
           Рўйҳатдан ўтиш
-        </button>
+        </el-button>
       </div>
       <img src="../assets/imgs/kozim aka.webp" alt=""
         class="absolute top-[-125px] right-0 h-[523px] max-lg:w-[100%] max-lg:h-auto max-sm:top-[-150px] eight_mobile" />
@@ -43,6 +43,8 @@
 <script setup lang="ts">
 import { reactive, ref } from "vue";
 import type { FormInstance, FormRules } from "element-plus";
+import { ElMessage } from 'element-plus'
+import axios from "axios";
 
 interface RuleForm {
   name: string;
@@ -63,16 +65,25 @@ const rules = reactive<FormRules<RuleForm>>({
     { required: true, message: "Iltimos raqamingizni kiriting", trigger: "blur" },
   ],
 });
+
 const submitForm = (formEl: FormInstance | undefined) => {
   if (!formEl) return;
   formEl.validate((valid: boolean, fields: object) => {
     if (valid) {
-      console.log("submit!");
-    } else {
-      console.log("error submit!", fields);
+      ElMessage({
+        showClose: true,
+        message: 'Malumotlaringiz muofaqiyatli yuborildi!',
+        type: 'success',
+      })
+      axios.post(`https://api.kozimhon.uz/api/contack`, {
+        name: ruleForm.name,
+        number: ruleForm.phoneNumber
+      })
+      formEl.resetFields()
     }
   });
 };
+
 </script>
 
 <style>
@@ -106,6 +117,27 @@ const submitForm = (formEl: FormInstance | undefined) => {
   display: none;
 }
 
+.background-content button {
+  border: 1px solid rgba(21, 210, 232, 0.5);
+  background:
+    linear-gradient(0deg, rgba(21, 210, 232, 0.5), rgba(21, 210, 232, 0.5)) !important;
+  height: 48px;
+  color: white;
+}
+
+.background-content button:hover {
+  border: 1px solid rgba(21, 210, 232, 0.5);
+  background:
+    linear-gradient(0deg, rgba(21, 210, 232, 0.5), rgba(21, 210, 232, 0.5)) !important;
+  height: 48px;
+  color: white;
+}
+
+.background-content {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 1024px) {
   .background-content {
     border-radius: 22px;
@@ -125,6 +157,8 @@ const submitForm = (formEl: FormInstance | undefined) => {
   .eight_content {
     height: max-content;
   }
+
+
 
   .eight_content h2 {
     font-size: 22px;
