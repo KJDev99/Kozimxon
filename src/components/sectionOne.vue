@@ -17,7 +17,7 @@
         <img src="../assets/imgs/main-card2.webp" alt="icon"
           class="absolute md:left-[-14px] md:top-[-82px] w-[137px] h-[137px] max-md:w-[109px] max-md:h-[109px] max-md:top-[-36px] max-md:left-0" />
         <p>
-          Компаниянгизда HR тизимини жорий этган ҳолда 101% ли натижага эришиш;
+          Стрессдан ҳоли равишда жамоани самарали бошқаришни истовчи директор (СЕО) ва ТОП менежер бўлсангиз.
         </p>
       </div>
 
@@ -26,7 +26,7 @@
         <img src="../assets/imgs/main-card3.webp" alt="icon"
           class="absolute md:left-[-14px] md:top-[-82px] w-[137px] h-[137px] max-md:w-[109px] max-md:h-[109px] max-md:top-[-36px] max-md:left-0" />
         <p>
-          Компаниянгизда HR тизимини жорий этган ҳолда 101% ли натижага эришиш;
+          Ҳар қандай ташкилотда ўз қийматини оширишни истаётган HR менежер бўлсангиз;
         </p>
       </div>
     </div>
