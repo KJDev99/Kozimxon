@@ -13,7 +13,7 @@
                         <p>{{ option.option }}</p>
                     </div>
                 </div>
-                <button class="five_btn"><a href="registration">Курсга ёзилиш</a></button>
+                <button class="five_btn"><a href="#registration">Курсга ёзилиш</a></button>
             </div>
         </div>
     </div>

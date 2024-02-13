@@ -3,7 +3,7 @@
         <h3 class="seven_title">Кўп бериладиган саволлар</h3>
         <vue-collapsible-panel-group accordion
             class="grid lg:grid-cols-2 max-md:grid-cols-1 lg:gap-x-10 lg:gap-y-10 max-md:gap-y-2.5">
-            <vue-collapsible-panel v-for="faqs of faq" :key="faqs.id" :expanded="!(faqs.id - 1)">
+            <vue-collapsible-panel v-for="faqs, index of faq" :key="faqs.id" :expanded="!index">
                 <template #title>
                     <p>{{ faqs.question }}</p>
                 </template>

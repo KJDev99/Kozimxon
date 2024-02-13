@@ -3,10 +3,10 @@
         <h3 class="three_title">Курс дастури</h3>
         <vue-collapsible-panel-group accordion
             class="grid items-start lg:grid-cols-2 max-md:grid-cols-1 lg:gap-x-10 lg:gap-y-10 max-md:gap-y-2.5">
-            <vue-collapsible-panel v-for="course of course_program" :key="course.id" :expanded="!(course.id - 1)">
+            <vue-collapsible-panel v-for="course, index of course_program" :key="course.id" :expanded="!(index)">
                 <template #title>
-                    <div :class="`acc_num ${course.id % 2 == 0 ? 'acc_numLeft' : 'acc_numRight'}`">
-                        <p>{{ course.id }}</p>
+                    <div :class="`acc_num ${index % 2 == 1 ? 'acc_numLeft' : 'acc_numRight'}`">
+                        <p>{{ index+1 }}</p>
                     </div>
                     <p>{{ course.question }}</p>
                 </template>
