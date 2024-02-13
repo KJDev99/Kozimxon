@@ -75,7 +75,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
         message: 'Malumotlaringiz muofaqiyatli yuborildi!',
         type: 'success',
       })
-      axios.post(`https://api.kozimhon.uz/api/contack`, {
+      axios.post(`https://api.kozimhon.uz/api/contack/`, {
         name: ruleForm.name,
         number: ruleForm.phoneNumber
       })
